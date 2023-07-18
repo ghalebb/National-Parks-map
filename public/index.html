@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My National Parks</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="header">
+      <h1>My National Parks</h1>
+      <p>Welcome to my interactive map of National Parks that I have visited.</p>
+      <button id="addParkButton">Add New Park</button>
+      <form id="addParkForm" style="display: none;">
+        <label for="name">Park Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="lat">Latitude:</label>
+        <input type="number" id="lat" name="lat" step="any">
+        <label for="lng">Longitude:</label>
+        <input type="number" id="lng" name="lng" step="any">
+        <input type="submit" value="Add Park">
+        <button id="cancelAddPark">X</button>
+
+      </form>
+    </div>
+    <div id="map"></div>
+    <script src="app.js"></script>
+</body>
+</html>
